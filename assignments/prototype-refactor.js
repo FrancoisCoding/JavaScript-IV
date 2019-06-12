@@ -155,5 +155,3 @@ class Villain extends Humanoid {
   console.log(villain.laugh());
   console.log(hero.super());
   villain.destroy();
-
-
