@@ -111,18 +111,18 @@ class ProjectManager extends Instructor {
       catchPhrase: "You shall not pass!",
   });
 
-  console.log(dan)
-  console.log(dan.speak()) // Shows where person is from and name
-  console.log(dan.grade(isaiah.name, 'Javascript')) // Shows Instructor grading assignment
-  console.log(isaiah)
-  console.log(isaiah.listsSubjects()) // Shows the students favorite subject one by one
-  console.log(isaiah.PRAssignment('HTML')) // Shows submittion for pull request
-  console.log(isaiah.sprintChallenge('CSS')) // Shows student started Sprint
-  console.log(marguel)
-  console.log(brandon)
+  console.log('Instructor:',dan)
+  console.log('Greeting:',dan.speak()) // Shows where person is from and name
+  console.log('Grade:',dan.grade(isaiah.name, 'Javascript')) // Shows Instructor grading assignment
+  console.log('Student:',isaiah)
+  console.log('Favorite Subjects:',isaiah.listsSubjects()) // Shows the students favorite subject one by one
+  console.log('Pull Request:',isaiah.PRAssignment('HTML')) // Shows submission for pull request
+  console.log('Sprint Start:',isaiah.sprintChallenge('CSS')) // Shows student started Sprint
+  console.log('Project Manager:',marguel)
+  console.log('Project Manager:',brandon)
   console.log('Catch Phrase:',marguel.catchPhrase) // Prints Marguels Catch Phrase
   console.log('Catch Phrase:',brandon.catchPhrase)
-  console.log(marguel.demo('Javascript')) // Instructor says what subject we are learning
-  console.log(marguel.standUp('@web21_marguel'))// Shows Marguel reminding chat of standup
-  console.log(marguel.debugsCode(isaiah.name, 'Ruby'))
+  console.log('Demo:',marguel.demo('Javascript')) // Instructor says what subject we are learning
+  console.log('Standup Alert:',marguel.standUp('@web21_marguel'))// Shows Marguel reminding chat of standup
+  console.log('Debug Alert:',marguel.debugsCode(isaiah.name, 'Ruby'))
   isaiah.graduate(); // If you run code multiple times it will show me graduating and failing
