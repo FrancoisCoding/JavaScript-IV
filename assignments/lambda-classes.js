@@ -34,11 +34,11 @@ class Instructor extends Person {
     this.previousBackground = StudentAttrs.previousBackground;
     this.className = StudentAttrs.className;
     this.favSubjects = StudentAttrs.favSubjects;
-    this.grade = [...Array(101).keys()];;
+    this.grade = Math.floor(Math.random() * 100);
    }
-  listsSubjects(subject) {
-  const favSubjs = favSubjects.map()
-  console.log(favSubjs)
+  listsSubjects() {
+  const favSubjs = this.favSubjects.forEach((subject) => console.log(subject));
+  return favSubjs;
   }
   PRAssignment(subject) {
     return `${this.name} has submitted a PR for ${subject}`;
@@ -70,3 +70,46 @@ class ProjectManager extends Instructor {
   return `${this.name} debugs ${student}'s code on ${subject}`;
 }
 }
+
+  const dan = new Instructor({
+    name: 'Dan',
+    age: 'Maybe 32',
+    location: 'California',
+    specialty: 'Redux',
+    favLanguage: 'JavaScript, Python, Elm etc.',
+    catchPhrase: "Don't forget the homies",
+  });
+
+    const isaiah = new Student({
+    name: 'Isaiah',
+    age: 18,
+    location: 'Florida',
+    previousBackground: 'High School last month',
+    className: 'Web21',
+    favSubjects: ['Html', 'CSS', 'JavaScript'],
+  });
+
+      const marguel = new ProjectManager({
+    name: 'Marguel',
+    age: 'Maybe 26',
+    gradClassName: 'WEBPT2',
+    favInstructor: 'Me?',
+    location: 'California',
+    specialty: 'React',
+    favLanguage: 'JavaScript, Python, Elm etc.',
+    catchPhrase: "Practice Flex Zombies !!!",
+  });
+
+  console.log(dan)
+  console.log(dan.speak()) // Shows where person is from and name
+  console.log(dan.grade(isaiah.name, 'Javascript')) // Shows Instructor grading assignment
+  console.log(isaiah)
+  console.log(isaiah.listsSubjects()) // Shows the students favorite subject one by one
+  console.log(isaiah.PRAssignment('HTML')) // Shows submittion for pull request
+  console.log(isaiah.sprintChallenge('CSS')) // Shows student started Sprint
+  console.log(marguel)
+  console.log(marguel.catchPhrase) // Prints Marguels Catch Phrase
+  console.log(marguel.demo('Javascript')) // Instructor says what subject we are learning
+  console.log(marguel.standUp('@web21_marguel'))// Shows Marguel reminding chat of standup
+  console.log(marguel.debugsCode(isaiah.name, 'Ruby'))
+  isaiah.graduate(); // If you run code multiple times it will show me graduating and failing
