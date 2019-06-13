@@ -88,6 +88,22 @@ class ProjectManager extends Instructor {
       className: 'Web21',
       favSubjects: ['Html', 'CSS', 'JavaScript'],
   });
+      const kevin = new Student({
+      name: "Kevin",
+      age: 28,
+      location: "California",
+      previousBackground: "Table Games Dealer",
+      className: "WEB21",
+      favSubjects: ['Html', 'CSS', 'JavaScript'],
+  });
+      const nisa = new Student({
+      name: 'Nisa',
+      age: 25,
+      location: 'Ohio',
+      previousBackground: 'Debt Collector',
+      className: 'Web21',
+      favSubjects: ['Html', 'CSS', 'JavaScript'],
+  });
 
     const marguel = new ProjectManager({
       name: 'Marguel',
@@ -125,10 +141,15 @@ class ProjectManager extends Instructor {
   console.log('Instructor Dan:',dan)
   console.log('Greeting:',dan.speak()) // Shows where person is from and name
   console.log('Grade:',dan.grade(isaiah.name, 'Javascript')) // Shows Instructor grading assignment
-  console.log('Student:',isaiah)
+  console.log('Student Me:',isaiah)
+  console.log('Student Kevin:',kevin)
+  console.log('Student Nisa:',nisa)
   console.log('Favorite Subjects:',isaiah.listsSubjects()) // Shows the students favorite subject one by one
   console.log('Pull Request:',isaiah.PRAssignment('HTML')) // Shows submission for pull request
   console.log('Sprint Start:',isaiah.sprintChallenge('CSS')) // Shows student started Sprint
+  console.log('Isaiah\'s Previous Background:',isaiah.previousBackground)
+  console.log('Kevin\'s Previous Background:',kevin.previousBackground)
+  console.log('Nisa\'s Previous Background:',nisa.previousBackground)
   console.log('Project Manager Marguel:',marguel)
   console.log('Project Manager Brandon:',brandon)
   console.log('Project Manager Mary:',mary)
