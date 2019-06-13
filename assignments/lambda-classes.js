@@ -71,33 +71,44 @@ class ProjectManager extends Instructor {
 }
 }
 
-  const dan = new Instructor({
-    name: 'Dan',
-    age: 'Maybe 32',
-    location: 'California',
-    specialty: 'Redux',
-    favLanguage: 'JavaScript, Python, Elm etc.',
-    catchPhrase: "Don't forget the homies",
+    const dan = new Instructor({
+      name: 'Dan',
+      age: 'Maybe 32',
+      location: 'California',
+      specialty: 'Redux',
+      favLanguage: 'JavaScript, Python, Elm etc.',
+      catchPhrase: "Don't forget the homies",
   });
 
     const isaiah = new Student({
-    name: 'Isaiah',
-    age: 18,
-    location: 'Florida',
-    previousBackground: 'High School last month',
-    className: 'Web21',
-    favSubjects: ['Html', 'CSS', 'JavaScript'],
+      name: 'Isaiah',
+      age: 18,
+      location: 'Florida',
+      previousBackground: 'High School last month',
+      className: 'Web21',
+      favSubjects: ['Html', 'CSS', 'JavaScript'],
   });
 
-      const marguel = new ProjectManager({
-    name: 'Marguel',
-    age: 'Maybe 26',
-    gradClassName: 'WEBPT2',
-    favInstructor: 'Me?',
-    location: 'California',
-    specialty: 'React',
-    favLanguage: 'JavaScript, Python, Elm etc.',
-    catchPhrase: "Practice Flex Zombies !!!",
+    const marguel = new ProjectManager({
+      name: 'Marguel',
+      age: 'Maybe 26',
+      gradClassName: 'WEBPT2',
+      favInstructor: 'Me?',
+      location: 'California',
+      specialty: 'React',
+      favLanguage: 'JavaScript, Python, Elm etc.',
+      catchPhrase: "Practice Flex Zombies !!!",
+  });
+
+    const brandon = new ProjectManager({
+      name: 'Brandon',
+      age: '34',
+      gradClassName: 'WEB18',
+      favInstructor: 'Professor Lambda',
+      location: 'Maine',
+      specialty: 'Redux',
+      favLanguage: 'JavaScript, C++, Python.',
+      catchPhrase: "You shall not pass!",
   });
 
   console.log(dan)
@@ -108,7 +119,9 @@ class ProjectManager extends Instructor {
   console.log(isaiah.PRAssignment('HTML')) // Shows submittion for pull request
   console.log(isaiah.sprintChallenge('CSS')) // Shows student started Sprint
   console.log(marguel)
-  console.log(marguel.catchPhrase) // Prints Marguels Catch Phrase
+  console.log(brandon)
+  console.log('Catch Phrase:',marguel.catchPhrase) // Prints Marguels Catch Phrase
+  console.log('Catch Phrase:',brandon.catchPhrase)
   console.log(marguel.demo('Javascript')) // Instructor says what subject we are learning
   console.log(marguel.standUp('@web21_marguel'))// Shows Marguel reminding chat of standup
   console.log(marguel.debugsCode(isaiah.name, 'Ruby'))
