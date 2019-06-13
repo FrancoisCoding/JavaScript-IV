@@ -158,6 +158,27 @@ class ProjectManager extends Instructor {
       catchPhrase: "Dont forget your daily commit.",
   });
 
+      const pat = new ProjectManager({
+      name: 'Pat',
+      age: '38',
+      gradClassName: 'WEB18',
+      favInstructor: 'Brett Madrid',
+      location: 'Petaluma, Ca',
+      specialty: 'Empathetic to the struggle of Redux',
+      favLanguage: 'JavaScript',
+      catchPhrase: 'Lets google that together.'
+});
+
+      const darren = new ProjectManager({
+      name: 'Darren',
+      age: '25',
+      gradClassName: 'WEB18',
+      favInstructor: 'Josh Knell',
+      location: 'North Carolina',
+      specialty: 'React',
+      favLanguage: 'Javascript',
+      catchPhrase: 'Gang. Gang.',
+  });
 
   console.log('Instructor Dan:',dan)
   console.log('Greeting:',dan.speak()) // Shows where person is from and name
@@ -177,11 +198,15 @@ class ProjectManager extends Instructor {
   console.log('Project Manager Brandon:',brandon)
   console.log('Project Manager Mary:',mary)
   console.log('Project Manager Christian:',christian)
+  console.log('Project Manager Pat:',pat)
+  console.log('Project Manager Darren:',darren)
   console.log('Marguel\'s Catch Phrase:',marguel.catchPhrase) // Prints Marguels Catch Phrase
   console.log('Brandon\'s Catch Phrase:',brandon.catchPhrase)
   console.log('Mary\'s Catch Phrase:',mary.catchPhrase)
   console.log('Dan\'s Catch Phrase:',dan.catchPhrase)
   console.log('Christian\'s Catch Phrase:',christian.catchPhrase)
+  console.log('Pat\'s Catch Phrase:',pat.catchPhrase)
+  console.log('Darren\'s Catch Phrase:',darren.catchPhrase)
   console.log('Demo:',marguel.demo('Javascript')) // Instructor says what subject we are learning
   console.log('Standup Alert:',marguel.standUp('@web21_marguel'))// Shows Marguel reminding chat of standup
   console.log('Debug Alert:',marguel.debugsCode(isaiah.name, 'Ruby'))
