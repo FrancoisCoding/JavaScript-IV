@@ -73,11 +73,11 @@ class ProjectManager extends Instructor {
 
     const dan = new Instructor({
       name: 'Dan',
-      age: 'Maybe 32',
-      location: 'California',
-      specialty: 'Redux',
-      favLanguage: 'JavaScript, Python, Elm etc.',
-      catchPhrase: "Don't forget the homies",
+      age: 'Infinity',
+      location: 'Denver',
+      specialty: 'Relentless Debugger',
+      favLanguage: 'JavaScript, Python, Elm, ReasonML, SmallTalk, Haskell, C#, Java, Rust, Go, Ruby, Crystal, Elixir, Lua, and Julia',
+      catchPhrase: 'If you can do the thing, you can get paid to do the thing!',
   });
 
     const isaiah = new Student({
@@ -122,7 +122,7 @@ class ProjectManager extends Instructor {
       catchPhrase: "That looks AWESOME",
   });
 
-  console.log('Instructor:',dan)
+  console.log('Instructor Dan:',dan)
   console.log('Greeting:',dan.speak()) // Shows where person is from and name
   console.log('Grade:',dan.grade(isaiah.name, 'Javascript')) // Shows Instructor grading assignment
   console.log('Student:',isaiah)
@@ -135,6 +135,7 @@ class ProjectManager extends Instructor {
   console.log('Marguel Catch Phrase:',marguel.catchPhrase) // Prints Marguels Catch Phrase
   console.log('Brandon Catch Phrase:',brandon.catchPhrase)
   console.log('Mary Catch Phrase:',mary.catchPhrase)
+  console.log('Dan Catch Phrase:',dan.catchPhrase)
   console.log('Demo:',marguel.demo('Javascript')) // Instructor says what subject we are learning
   console.log('Standup Alert:',marguel.standUp('@web21_marguel'))// Shows Marguel reminding chat of standup
   console.log('Debug Alert:',marguel.debugsCode(isaiah.name, 'Ruby'))
